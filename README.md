@@ -20,3 +20,11 @@ gcloud auth application-default login
 ```
 ./gradlew appengineDeployAll
 ```
+
+### Etc
+
+만약 이미 기운영중인 프로젝트에서 Cloud Storage 버킷 중 `staging.[project-id].appspot.com` 을 삭제했다면, 아래의 명령어로 복구 가능하다
+
+```
+gcloud beta app repair
+```
